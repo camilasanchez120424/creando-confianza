@@ -1,0 +1,148 @@
+﻿body {
+    font-family: algerian, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:#fbe3e3;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color:fbe3e3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-width: 90px;
+}
+
+nav {
+    margin-top: 5px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color:#FFFFFF;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: fbe3e3;
+}
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: fbe3e3;
+    display: none;
+    border-radius: 0 0 15px 15px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu a {
+    padding: 10px 20px;
+    color:  #FFFFFF;
+}
+
+.submenu a:hover {
+    background-color: fbe3e3;
+}
+
+main {
+    background-color:pink;
+    color:  #black;
+    text-align: center;
+    padding: 40px 10px;
+}
+
+.welcome-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.welcome-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15px;
+}
+/* Estilos CSS para los botones de menú */
+.menu1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.menu-button {
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #2c3e50;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+}
+
+.menu-button:last-child {
+    margin-right: #1a252f;
+}
+
+/* Estilos CSS para las imágenes */
+.image-container {
+   display: flex;
+ text-align: center;
+}
+
+.image {
+    display: none;
+    max-width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.image.active {
+    display: block;
+}
+footer {
+    background-color: white;
+    color:black;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.social-media a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
